@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editDiaChi"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/bogoc_but"
+        android:ems="10"
+        android:hint="Số Nhà "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearQuan"
+        android:layout_width="334dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bogoc_but"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDiaChi">
+
+        <TextView
+            android:id="@+id/textQuan"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="Tỉnh" />
+
+        <Spinner
+            android:id="@+id/spinnerQuan"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearXa"
+        android:layout_width="334dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bogoc_but"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearHuyen">
+
+        <TextView
+            android:id="@+id/textXa"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="Xã" />
+
+        <Spinner
+            android:id="@+id/spinnerXa"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearHuyen"
+        android:layout_width="334dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bogoc_but"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearQuan">
+
+        <TextView
+            android:id="@+id/textPhuong"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="Quận/Huyện" />
+
+        <Spinner
+            android:id="@+id/spinnerPhuong"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="327dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bogoc_but"
+        android:ems="10"
+        android:hint="Mô tả số lượng"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearXa" />
+
+    <EditText
+        android:id="@+id/in_date"
+        android:layout_width="195dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bogoc_but"
+        android:hint="Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="52dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/in_date"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/in_date"
+        android:layout_toRightOf="@+id/in_date"
+        android:background="@drawable/botron"
+        android:drawableStart="@android:drawable/ic_menu_day"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_editor_absoluteX="245dp" />
+
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="54dp"
+        android:layout_height="41dp"
+        android:drawableStart="@drawable/clock_icon"
+        android:layout_below="@+id/btn_date"
+        android:layout_alignStart="@+id/btn_date"
+        android:layout_alignLeft="@+id/btn_date"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/botron"
+        app:layout_constraintStart_toEndOf="@+id/editTime"
+        app:layout_constraintTop_toBottomOf="@+id/btn_date" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bogoc_but"
+        android:backgroundTint="@color/colorButton"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:text="Ảnh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTime" />
+
+    <EditText
+        android:id="@+id/editTime"
+        android:layout_width="201dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bogoc_but"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/in_date" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="141dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="88dp"
+        android:text="Xác Nhận"
+        android:backgroundTint="@color/colorButton"
+        android:background="@drawable/bogoc_but"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
