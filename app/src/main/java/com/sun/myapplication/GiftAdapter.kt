@@ -12,6 +12,7 @@ class GiftAdapter(
     private val listener: GiftListener,
     private val gifts: MutableList<Gift> = mutableListOf()
 ) : BaseAdapter<Gift>, RecyclerView.Adapter<GiftAdapter.ViewHolder>() {
+
     override fun updateData(data: List<Gift>) {
     }
 
@@ -33,9 +34,9 @@ class GiftAdapter(
         override fun onBindData(itemData: Gift) {
             super.onBindData(itemData)
             itemView.apply {
-                LoadImage.loadImageFromDrawable(imageGift,itemData.imageGift)
-                textName.text= itemData.nameGift
-                textPoint.text= itemData.point.toString()
+                LoadImage.loadImageFromDrawable(imageGift, itemData.imageGift)
+                textName.text = itemData.nameGift
+                textPoint.text = itemData.point.toString()
             }
         }
 

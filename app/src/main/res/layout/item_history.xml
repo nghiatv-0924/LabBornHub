@@ -40,7 +40,15 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:text="số điểm"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgCoin"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgCoin"
+        android:layout_width="62dp"
+        android:layout_height="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_tree" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

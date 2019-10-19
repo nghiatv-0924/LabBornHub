@@ -8,12 +8,12 @@ import android.view.ViewGroup
 import com.sun.myapplication.base.BaseFragment
 import com.sun.myapplication.base.FragmentInteractionListener
 
-class GiftFragment : BaseFragment() {
-    private var listener: OnGiftFragmentInteractionListener? = null
+class HistoryFragment : BaseFragment() {
+    private var listener: OnHistoryFragmentInteractionListener? = null
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        if (context is OnGiftFragmentInteractionListener) {
+        if (context is OnHistoryFragmentInteractionListener) {
             listener = context
         } else {
             throw RuntimeException("$context $ERROR_IMPLEMENT_FRAGMENT_INTERACTION_LISTENER")
@@ -24,15 +24,15 @@ class GiftFragment : BaseFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? = inflater.inflate(R.layout.fragment_gift, container, false)
+    ): View? = inflater.inflate(R.layout.fragment_history, container, false)
 
-    interface OnGiftFragmentInteractionListener : FragmentInteractionListener
+    interface OnHistoryFragmentInteractionListener : FragmentInteractionListener
 
     companion object {
         private const val ERROR_IMPLEMENT_FRAGMENT_INTERACTION_LISTENER =
             "must implement OnKanjiBasicFragmentInteractionListener"
 
         @JvmStatic
-        fun newInstance() = GiftFragment()
+        fun newInstance() = HistoryFragment()
     }
 }
