@@ -29,6 +29,7 @@
         tools:listitem="@layout/item_gift" />
 
     <TextView
+        android:autoLink="web"
         android:id="@+id/textAddressGift"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -13,7 +13,7 @@
         android:layout_marginTop="64dp"
         android:text="Cập nhật thông tin"
         android:textColor="#000"
-        android:textSize="32dp" />
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/editReName"
@@ -24,8 +24,9 @@
         android:layout_marginRight="32dp"
         android:background="@drawable/custom_edit_text"
         android:hint="Họ và tên"
+        android:padding="8dp"
         android:paddingLeft="16dp"
-        android:textSize="24dp" />
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/editReAddr"
@@ -36,8 +37,9 @@
         android:layout_marginRight="32dp"
         android:background="@drawable/custom_edit_text"
         android:hint="Địa chỉ"
+        android:padding="8dp"
         android:paddingLeft="16dp"
-        android:textSize="24dp" />
+        android:textSize="16sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,7 +48,8 @@
         android:layout_marginTop="32dp"
         android:layout_marginRight="32dp"
         android:background="@drawable/custom_edit_text"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="8dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -54,7 +57,7 @@
             android:layout_gravity="center"
             android:paddingLeft="16dp"
             android:text="Chọn tỉnh/thành phố"
-            android:textSize="@dimen/dp_24" />
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/spinnerTinh"
@@ -72,7 +75,8 @@
         android:layout_marginTop="32dp"
         android:layout_marginRight="32dp"
         android:background="@drawable/custom_edit_text"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="8dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -80,7 +84,7 @@
             android:layout_gravity="center"
             android:paddingLeft="16dp"
             android:text="Chọn quận/huyện"
-            android:textSize="@dimen/dp_24" />
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/spinnerHuyen"
@@ -98,7 +102,8 @@
         android:layout_marginTop="32dp"
         android:layout_marginRight="32dp"
         android:background="@drawable/custom_edit_text"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="8dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -106,7 +111,7 @@
             android:layout_gravity="center"
             android:paddingLeft="16dp"
             android:text="Chọn phường/xã"
-            android:textSize="@dimen/dp_24" />
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/spinnerXa"
@@ -116,28 +121,37 @@
 
     <Button
         android:id="@+id/buttonSave"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/custom_button"
-        android:text="Lưu thay đổi"
+        android:paddingStart="@dimen/dp_24"
+        android:paddingEnd="@dimen/dp_24"
+        android:text="Cập nhật thông tin"
         android:textAllCaps="false"
         android:textColor="#ffff"
-        android:textSize="@dimen/dp_24" />
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/buttonLogout"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginRight="32dp"
         android:background="@drawable/custom_button"
-        android:text="Đăng xuất"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawableStart="@drawable/ic_logout_black_24dp"
+        android:paddingStart="@dimen/dp_24"
+        android:paddingEnd="@dimen/dp_24"
+        android:text="  Đăng xuất"
         android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="@dimen/dp_24" />
+        android:textColor="@color/colorText"
+        android:textSize="16sp"
+        android:layout_marginBottom="32dp"/>
 
 </LinearLayout>
