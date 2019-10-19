@@ -25,7 +25,7 @@
         android:background="@drawable/custom_edit_text"
         android:hint="Họ và tên"
         android:paddingLeft="16dp"
-        android:textSize="16dp" />
+        android:textSize="24dp" />
 
     <EditText
         android:id="@+id/editReAddr"
@@ -37,7 +37,7 @@
         android:background="@drawable/custom_edit_text"
         android:hint="Địa chỉ"
         android:paddingLeft="16dp"
-        android:textSize="16dp" />
+        android:textSize="24dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,7 +53,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingLeft="16dp"
-            android:text="Chọn tỉnh/thành phố" />
+            android:text="Chọn tỉnh/thành phố"
+            android:textSize="@dimen/dp_24" />
 
         <Spinner
             android:id="@+id/spinnerTinh"
@@ -78,7 +79,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingLeft="16dp"
-            android:text="Chọn quận/huyện" />
+            android:text="Chọn quận/huyện"
+            android:textSize="@dimen/dp_24" />
 
         <Spinner
             android:id="@+id/spinnerHuyen"
@@ -103,16 +105,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingLeft="16dp"
-            android:text="Chọn phường/xã" />
+            android:text="Chọn phường/xã"
+            android:textSize="@dimen/dp_24" />
 
         <Spinner
-
             android:id="@+id/spinnerXa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
     </LinearLayout>
-
 
     <Button
         android:id="@+id/buttonSave"
@@ -125,7 +125,7 @@
         android:text="Lưu thay đổi"
         android:textAllCaps="false"
         android:textColor="#ffff"
-        android:textSize="32dp" />
+        android:textSize="@dimen/dp_24" />
 
     <Button
         android:id="@+id/buttonLogout"
@@ -138,6 +138,6 @@
         android:text="Đăng xuất"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="32dp" />
+        android:textSize="@dimen/dp_24" />
 
 </LinearLayout>
