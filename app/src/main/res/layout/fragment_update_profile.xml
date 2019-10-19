@@ -22,7 +22,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginRight="32dp"
-        android:background="@drawable/custom_edt"
+        android:background="@drawable/custom_edit_text"
         android:hint="Họ và tên"
         android:paddingLeft="16dp"
         android:textSize="16dp" />
@@ -34,7 +34,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginRight="32dp"
-        android:background="@drawable/custom_edt"
+        android:background="@drawable/custom_edit_text"
         android:hint="Địa chỉ"
         android:paddingLeft="16dp"
         android:textSize="16dp" />
@@ -45,7 +45,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginRight="32dp"
-        android:background="@drawable/custom_edt"
+        android:background="@drawable/custom_edit_text"
         android:orientation="horizontal">
 
         <TextView
@@ -70,7 +70,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginRight="32dp"
-        android:background="@drawable/custom_edt"
+        android:background="@drawable/custom_edit_text"
         android:orientation="horizontal">
 
         <TextView
@@ -95,7 +95,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginRight="32dp"
-        android:background="@drawable/custom_edt"
+        android:background="@drawable/custom_edit_text"
         android:orientation="horizontal">
 
         <TextView
@@ -121,7 +121,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginRight="32dp"
-        android:background="@drawable/custombutton"
+        android:background="@drawable/custom_button"
         android:text="Lưu thay đổi"
         android:textAllCaps="false"
         android:textColor="#ffff"
@@ -134,7 +134,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginRight="32dp"
-        android:background="@drawable/custombutton"
+        android:background="@drawable/custom_button"
         android:text="Đăng xuất"
         android:textAllCaps="false"
         android:textColor="#fff"

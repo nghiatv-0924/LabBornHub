@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -12,7 +11,7 @@
         android:layout_height="66dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gift" />
+        app:srcCompat="@drawable/ic_card_giftcard_black_24dp" />
 
     <TextView
         android:id="@+id/tvDesc"
@@ -41,14 +40,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:text="số điểm"
-        app:layout_constraintEnd_toStartOf="@+id/imgCoin"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imgCoin"
-        android:layout_width="62dp"
-        android:layout_height="65dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_tr" />
 </androidx.constraintlayout.widget.ConstraintLayout>
