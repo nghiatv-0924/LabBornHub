@@ -13,7 +13,7 @@
         android:layout_marginTop="32dp"
         android:text="Thông báo"
         android:textColor="#000"
-        android:textSize="32dp" />
+        android:textSize="32sp" />
 
     <TextView
         android:id="@+id/textContent"
@@ -25,7 +25,7 @@
         android:layout_marginRight="32dp"
         android:text="@string/success"
         android:textColor="#000"
-        android:textSize="24dp" />
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/buttonClose"
@@ -35,6 +35,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/custom_button"
         android:text="Đóng"
+        android:textSize="24sp"
         android:textAllCaps="false"
         android:textColor="#fff" />
 </LinearLayout>

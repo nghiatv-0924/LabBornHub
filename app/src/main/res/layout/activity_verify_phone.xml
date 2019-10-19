@@ -20,6 +20,7 @@
         android:id="@+id/titleOTP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
         android:text="Một mã xác thực đã được gửi tới sô"
         android:textColor="@color/colorTextSecondary"
         android:textSize="16sp"
