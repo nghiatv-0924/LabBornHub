@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="Save Envi">My Application</string>
     <string name="success">Cập nhật thông tin thành công</string>
     <string name="fail">Vui lòng chọn đủ thông tin</string>
 </resources>
