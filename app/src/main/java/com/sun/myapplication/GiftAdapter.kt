@@ -9,7 +9,6 @@ import com.sun.myapplication.base.BaseViewHolder
 import kotlinx.android.synthetic.main.item_gift.view.*
 
 class GiftAdapter(
-    private val listener: GiftListener,
     private val gifts: MutableList<Gift> = mutableListOf()
 ) : BaseAdapter<Gift>, RecyclerView.Adapter<GiftAdapter.ViewHolder>() {
 
@@ -19,7 +18,7 @@ class GiftAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView =
             LayoutInflater.from(parent.context).inflate(R.layout.item_gift, parent, false)
-        return ViewHolder(itemView, listener)
+        return ViewHolder(itemView)
     }
 
     override fun getItemCount() = gifts.size
@@ -28,8 +27,7 @@ class GiftAdapter(
     }
 
     class ViewHolder(
-        itemView: View,
-        private val listener: GiftListener
+        itemView: View
     ) : BaseViewHolder<Gift>(itemView) {
         override fun onBindData(itemData: Gift) {
             super.onBindData(itemData)
