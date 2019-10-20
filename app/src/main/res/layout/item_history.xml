@@ -13,7 +13,8 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_card_giftcard_black_24dp" />
+        app:srcCompat="@drawable/ic_card_giftcard_black_24dp"
+        android:contentDescription="@string/app_name" />
 
     <TextView
         android:id="@+id/tvDesc"
@@ -22,7 +23,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
-        android:text="Mô tả"
         app:layout_constraintStart_toEndOf="@+id/imgTypes"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,7 +33,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
-        android:text="Ngày"
         app:layout_constraintStart_toEndOf="@+id/imgTypes"
         app:layout_constraintTop_toBottomOf="@+id/tvDesc" />
 
@@ -42,7 +41,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:text="50"
         style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
         app:layout_constraintBottom_toBottomOf="@+id/imgCoin"
         app:layout_constraintEnd_toStartOf="@+id/imgCoin"
@@ -52,10 +50,11 @@
         android:id="@+id/imgCoin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="@dimen/dp_28"
+        android:layout_marginEnd="@dimen/dp_28"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_tree" />
+        app:srcCompat="@drawable/ic_tree"
+        android:contentDescription="@string/app_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

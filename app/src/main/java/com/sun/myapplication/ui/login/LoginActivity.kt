@@ -1,9 +1,12 @@
-package com.sun.myapplication
+package com.sun.myapplication.ui.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.auth.FirebaseAuth
+import com.sun.myapplication.ui.home.HomeActivity
+import com.sun.myapplication.R
+import com.sun.myapplication.ui.verify.VerifyPhoneActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {

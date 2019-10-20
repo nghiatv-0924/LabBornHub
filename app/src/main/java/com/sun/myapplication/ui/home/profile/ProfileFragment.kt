@@ -1,4 +1,4 @@
-package com.sun.myapplication
+package com.sun.myapplication.ui.home.profile
 
 import android.content.Context
 import android.content.Intent
@@ -7,8 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.firebase.auth.FirebaseAuth
+import com.sun.myapplication.R
 import com.sun.myapplication.base.BaseFragment
 import com.sun.myapplication.base.FragmentInteractionListener
+import com.sun.myapplication.ui.login.LoginActivity
 import kotlinx.android.synthetic.main.fragment_update_profile.*
 
 class ProfileFragment : BaseFragment() {
@@ -37,6 +39,7 @@ class ProfileFragment : BaseFragment() {
             startActivity(Intent(context, LoginActivity::class.java))
             listener?.signOut()
         }
+        listener?.setToolbarTitle("Thông tin cá nhân")
     }
 
     interface OnProfileFragmentInteractionListener : FragmentInteractionListener {

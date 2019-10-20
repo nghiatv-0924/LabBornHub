@@ -12,9 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/dp_24"
-        android:text="Bạn hiện tại chưa có giao dịch nào"
+        android:text="@string/titleHistory"
         android:textColor="@color/colorText"
-        android:textSize="16sp" />
+        android:textSize="@dimen/sp_16" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/my_recycler_view"

@@ -1,11 +1,14 @@
-package com.sun.myapplication
+package com.sun.myapplication.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.sun.myapplication.util.LoadImage
+import com.sun.myapplication.R
 import com.sun.myapplication.base.BaseAdapter
 import com.sun.myapplication.base.BaseViewHolder
+import com.sun.myapplication.data.model.Gift
 import kotlinx.android.synthetic.main.item_gift.view.*
 
 class GiftAdapter(
@@ -24,6 +27,7 @@ class GiftAdapter(
     override fun getItemCount() = gifts.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.onBindData(gifts[position])
     }
 
     class ViewHolder(

@@ -2,4 +2,14 @@
     <string name="app_name">My Application</string>
     <string name="success">Cập nhật thông tin thành công</string>
     <string name="fail">Vui lòng chọn đủ thông tin</string>
+    <string name="hindEditTextPhone">Số điện thoại của bạn</string>
+    <string name="hindEditTextName">Họ và tên</string>
+    <string name="hindEditTextAdress">Địa chỉ</string>
+    <string name="buttonContinue">Tiếp tục</string>
+    <string name="titleUpdateProfile">Bổ sung thông tin cá nhân</string>
+    <string name="titleHistory">Bạn hiện tại chưa có giao dịch nào</string>
+    <string name="titleGift">Danh sách các điểm đổi quà</string>
+    <string name="here">tại đây</string>
+    <string name="close">Đóng</string>
+    <string name="notify">Thông báo</string>
 </resources>

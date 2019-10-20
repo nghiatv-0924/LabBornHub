@@ -11,9 +11,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="64dp"
-        android:text="Bổ sung thông tin cá nhân"
-        android:textColor="#000"
-        android:textSize="32dp" />
+        android:text="@string/titleUpdateProfile"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/sp_24" />
 
     <EditText
         android:id="@+id/editName"
@@ -22,22 +22,24 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginRight="32dp"
+        android:autofillHints="@string/hindEditTextName"
         android:background="@drawable/custom_edit_text"
-        android:hint="Họ và tên"
-        android:paddingLeft="16dp"
-        android:textSize="24sp" />
+        android:hint="@string/hindEditTextName"
+        android:paddingLeft="@dimen/dp_16"
+        android:textSize="@dimen/sp_24" />
 
     <EditText
         android:id="@+id/editAddr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginStart="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginEnd="@dimen/dp_32"
+        android:autofillHints="@string/hindEditTextAdress"
         android:background="@drawable/custom_edit_text"
-        android:hint="Địa chỉ"
-        android:paddingLeft="16dp"
-        android:textSize="24sp" />
+        android:hint="@string/hindEditTextAdress"
+        android:paddingStart="@dimen/dp_16"
+        android:textSize="@dimen/sp_24" />
 
     <LinearLayout
         android:layout_width="match_parent"

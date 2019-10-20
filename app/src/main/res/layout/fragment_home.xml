@@ -15,60 +15,51 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView4"
+            style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="@dimen/dp_24"
             android:layout_marginTop="24dp"
-            style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
             android:text="Số điểm của bạn"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@id/cardScore"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="48dp"
+            android:layout_marginEnd="@dimen/dp_24"
             android:layout_marginBottom="24dp"
-            android:text="       Thu gom"
-            android:textColor="@android:color/white"
             android:backgroundTint="@color/colorButton"
             android:drawableLeft="@android:drawable/stat_sys_phone_call"
+            android:text=" Thu gom"
+            android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="@id/cardScore" />
 
         <TextView
             android:id="@+id/textView5"
+            style="@style/TextAppearance.AppCompat.Headline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
             android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/ic_tree"
             android:text="50"
-            style="@style/TextAppearance.AppCompat.Headline"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/textView4"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView5"
-            app:layout_constraintStart_toEndOf="@+id/textView5"
-            app:layout_constraintTop_toTopOf="@+id/textView5"
-            app:srcCompat="@drawable/ic_tree" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHome"
         android:layout_width="410dp"
         android:layout_height="260dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardScore"

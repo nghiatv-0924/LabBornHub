@@ -1,4 +1,4 @@
-package com.sun.myapplication
+package com.sun.myapplication.ui.verify
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,6 +10,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider
+import com.sun.myapplication.R
+import com.sun.myapplication.ui.home.HomeActivity
 import kotlinx.android.synthetic.main.activity_verify_phone.*
 import java.util.concurrent.TimeUnit
 
@@ -26,7 +28,8 @@ class VerifyPhoneActivity : AppCompatActivity() {
         setContentView(R.layout.activity_verify_phone)
         val phone = intent.getStringExtra("phone")
         phone?.let {
-            sendVerificationCode(phone)
+            textPhone.text = it
+            sendVerificationCode(it)
         }
     }
 
@@ -84,8 +87,7 @@ class VerifyPhoneActivity : AppCompatActivity() {
                     if (it.exception is FirebaseAuthInvalidCredentialsException) {
                         message = "Invalid code entered..."
                     }
-                    val snackbar =
-                        Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, message, Toast.LENGTH_LONG).show()
                 }
             }
     }

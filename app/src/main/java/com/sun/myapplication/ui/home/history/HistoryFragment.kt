@@ -1,10 +1,11 @@
-package com.sun.myapplication
+package com.sun.myapplication.ui.home.history
 
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.sun.myapplication.R
 import com.sun.myapplication.base.BaseFragment
 import com.sun.myapplication.base.FragmentInteractionListener
 
@@ -25,6 +26,11 @@ class HistoryFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? = inflater.inflate(R.layout.fragment_history, container, false)
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        listener?.setToolbarTitle("Lịch sử giao dịch")
+    }
 
     interface OnHistoryFragmentInteractionListener : FragmentInteractionListener
 

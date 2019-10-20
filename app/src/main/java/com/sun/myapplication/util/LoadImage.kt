@@ -1,9 +1,10 @@
-package com.sun.myapplication
+package com.sun.myapplication.util
 
 import android.annotation.SuppressLint
 import android.widget.ImageView
 import androidx.annotation.IdRes
 import com.bumptech.glide.Glide
+import com.sun.myapplication.R
 
 object LoadImage {
     fun loadImage(image: ImageView, link: String) {
